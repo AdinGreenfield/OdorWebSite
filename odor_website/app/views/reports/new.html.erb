@@ -1,0 +1,42 @@
+
+<div class="reports new">
+  <h2>Create Report</h2>
+
+    <%= form_for(:report, :url => {:action => 'new'}) do |f| %>
+      <table summary="Reports form fields">
+        <tr>
+          <th>First Name</th>
+          <td><%=f.text_field(:first_name) %></td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td><%=f.text_field(:last_name) %></td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td><%=f.text_field(:address) %></td>
+        </tr>
+        <tr>
+          <th>City</th>
+          <td><%=f.text_field(:city) %></td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td><%=f.text_field(:state) %></td>
+        </tr>
+        <tr>
+          <th>Zip Code</th>
+          <td><%=f.text_field(:zip_code) %></td>
+        </tr>
+        <tr>
+          <th>Message</th>
+          <td><%=f.text_field(:message) %></td>
+        </tr>
+      </table>
+
+      <div class="form-buttons">
+        <%=submit_tag("Create Report") %>
+      </div>
+    <% end %>
+
+  </div>

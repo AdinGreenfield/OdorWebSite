@@ -1,5 +1,12 @@
 OdorWebsite::Application.routes.draw do
-  get "demo/index"
+  get "reports/index"
+  get "reports/show"
+  get "reports/new"
+  #get "demo/index"
+
+  root "reports#new"
+
+  #match ':controller(/:action(/:id))', via => :get
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -40,7 +47,7 @@ OdorWebsite::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
