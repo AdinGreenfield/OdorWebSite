@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   database: ebdb
-  pool: 5
+  #pool: 5
   username: adingreenfield
-  password: rGh-up9-LaL-EH6
-  host: aale1t1yzv1lho.cddwhyskou4z.us-east-2.rds.amazonaws.com
+  password: immanuel
+  host: dbinstance.cddwhyskou4z.us-east-2.rds.amazonaws.com
   port: 3306
   #socket: /tmp/mysql.sock
 
@@ -26,10 +26,10 @@ test:
   adapter: mysql2
   encoding: utf8
   database: ebdb
-  pool: 5
+  #pool: 5
   username: adingreenfield
-  password: rGh-up9-LaL-EH6
-  host: aale1t1yzv1lho.cddwhyskou4z.us-east-2.rds.amazonaws.com
+  password: immanuel
+  host: dbinstance.cddwhyskou4z.us-east-2.rds.amazonaws.com
   port: 3306
   #socket: /tmp/mysql.sock
 
@@ -37,9 +37,9 @@ production:
   adapter: mysql2
   encoding: utf8
   database: ebdb
-  pool: 5
+  #pool: 5
   username: adingreenfield
-  password: rGh-up9-LaL-EH6
-  host: aale1t1yzv1lho.cddwhyskou4z.us-east-2.rds.amazonaws.com
+  password: immanuel
+  host: dbinstance.cddwhyskou4z.us-east-2.rds.amazonaws.com
   port: 3306
   #socket: /tmp/mysql.sock
