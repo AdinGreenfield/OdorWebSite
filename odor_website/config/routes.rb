@@ -1,12 +1,13 @@
 OdorWebsite::Application.routes.draw do
-  get "reports/index"
-  get "reports/show"
+  #get "reports/index"
+  #get "reports/show"
+
   get "reports/new"
-  #get "demo/index"
+  post "reports/create"
 
   root "reports#new"
 
-  #match ':controller(/:action(/:id))', via => :get
+  #match ':controller(/:action(/:id))', :via => [:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -9,6 +9,24 @@ class ReportsController < ApplicationController
   end
 
   def new
-    @report = Report.new 
+    @report = Report.new
   end
+
+  def create
+    #instantiate a new object using form parameters
+    @report = Report.new(report_params)
+    #if save succeeds, redirect to the index actions
+    if @report.save
+      redirect_to(:action => 'new')
+    else
+    #if save fails, redisplay the form so user can fix problems
+    render('new')
+    end
+  end
+
+private
+  def report_params
+    params.require(:report).permit(:first_name, :last_name, :address, :city, :state, :zip_code, :message)
+  end
+
 end
